@@ -9,7 +9,9 @@ Welcome to **GitHub Copilot Dev Days 2026**! This site provides a curated list o
 
 ## 🚀 Quick Start
 
-Choose a lab from the sidebar based on your preferred technology:
+1. **[✅ Tech Check](./tech-check)** — Sign up for GitHub Copilot and launch a Codespace before starting any lab.
+
+Then choose a lab from the sidebar based on your preferred technology:
 
 - **VS Code Labs** — TypeScript, Python, Java, and .NET labs using VS Code Copilot Agent Mode
 - **Other IDEs** — Visual Studio, Xcode, and JetBrains workshops
