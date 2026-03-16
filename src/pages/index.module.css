@@ -4,20 +4,149 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  background-color: #000000;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroTop {
+  display: flex;
+  flex: 1;
+  min-height: 62vh;
 }
 
-.buttons {
+/* Sidebar */
+.sidebar {
+  display: flex;
+  align-items: stretch;
+  padding: 2rem 1rem 2rem 1.5rem;
+  width: 200px;
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+.iconList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.iconBox {
+  width: 112px;
+  height: 112px;
+  border-radius: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.iconBoxGreen {
+  background: linear-gradient(145deg, #2ea050, #1a6e35);
+}
+
+.iconBoxGradient {
+  background: linear-gradient(135deg, #e8c0ff 0%, #d0a0f0 40%, #ffaacc 100%);
+}
+
+.iconBoxDarkGreen {
+  background: linear-gradient(145deg, #1a5e25, #0d3d18);
+}
+
+.verticalDivider {
+  width: 2px;
+  background-color: #2ea050;
+  margin-left: 1.5rem;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* Main content */
+.heroContent {
+  padding: 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroTitle {
+  color: #6bff6b !important;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+}
+
+.wifiSection {
+  margin-bottom: 2rem;
+}
+
+.wifiText {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+}
+
+.highlighted {
+  text-decoration: underline;
+}
+
+.buttons {
+  margin-top: 0.5rem;
+}
+
+.browseButton {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 2px solid #6bff6b;
+  color: #6bff6b;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.browseButton:hover {
+  background: #6bff6b;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Bottom panels */
+.heroBottom {
+  display: flex;
+  height: 160px;
+  border-top: 2px solid #2ea050;
+}
+
+.panel {
+  flex: 1;
+  background: #000000;
+}
+
+.panel:not(:last-child) {
+  border-right: 2px solid #2ea050;
+}
+
+@media screen and (max-width: 996px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .heroContent {
+    padding: 2rem;
+  }
+
+  .heroBottom {
+    height: 80px;
+  }
 }
