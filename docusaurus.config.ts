@@ -18,12 +18,12 @@ const config: Config = {
   url: 'https://qkfang.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ghc-dev-day-2026/',
+  baseUrl: '/ghc-devdays-2026/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'qkfang', // Usually your GitHub org/user name.
-  projectName: 'ghc-dev-day-2026', // Usually your repo name.
+  projectName: 'ghc-devdays-2026', // Usually your repo name.
 
   onBrokenLinks: 'warn',
 
@@ -72,7 +72,7 @@ const config: Config = {
           label: 'Labs',
         },
         {
-          href: 'https://github.com/qkfang/ghc-dev-day-2026',
+          href: 'https://github.com/qkfang/ghc-devdays-2026',
           label: 'GitHub',
           position: 'right',
         },

@@ -59,7 +59,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className={styles.browseButton}
-              to="/ghc-dev-day-2026/docs/intro">
+              to="/ghc-devdays-2026/docs/intro">
               Browse Labs →
             </Link>
           </div>
