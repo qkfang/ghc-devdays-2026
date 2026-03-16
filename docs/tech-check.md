@@ -15,11 +15,11 @@ GitHub Copilot offers a **free tier** that gives you everything you need to foll
 
 ### Steps
 
-1. **Go to the sign-up page**
-   Visit [https://aka.ms/get-github-copilot-devdays](https://aka.ms/get-github-copilot-devdays) or navigate to [github.com/features/copilot](https://github.com/features/copilot) and click **Start for free**.
-
-2. **Sign in to GitHub**
+1. **Sign in to GitHub**
    If you don't have a GitHub account, create one at [github.com/join](https://github.com/join). It's free and takes less than a minute.
+
+2. **Go to the sign-up page**
+   Navigate to [github.com/features/copilot](https://github.com/features/copilot) and click **Start for free**.
 
 3. **Choose the Free plan**
    On the plan selection screen, select **Copilot Free**. No credit card is required.
@@ -27,16 +27,13 @@ GitHub Copilot offers a **free tier** that gives you everything you need to foll
 4. **Complete the setup**
    Follow the on-screen prompts to finish activating Copilot on your account.
 
-5. **Verify activation**
-   Go to [github.com/settings/copilot](https://github.com/settings/copilot) and confirm that your Copilot subscription shows as **Active**.
-
 :::tip Already have Copilot?
 If you have a paid Copilot Individual, Business, or Enterprise plan, you're all set — no changes needed.
 :::
 
 ---
 
-## 2. Launch a GitHub Codespace
+## 2. Launch a GitHub Codespace (Suggested)
 
 GitHub Codespaces gives you a fully configured cloud development environment in your browser — no local installation required.
 
@@ -56,15 +53,6 @@ GitHub Codespaces gives you a fully configured cloud development environment in 
 4. **Start coding!**
    Once the Codespace opens, VS Code in the browser will be ready with all tools, extensions, and dependencies pre-installed for the lab.
 
-### Useful Codespaces shortcuts
-
-| Action | Shortcut / Command |
-|--------|--------------------|
-| Open Command Palette | `F1` or `Ctrl+Shift+P` / `Cmd+Shift+P` |
-| Open integrated terminal | `Ctrl+`` ` ` or **Terminal → New Terminal** |
-| Stop a Codespace | [github.com/codespaces](https://github.com/codespaces) → ⋯ → **Stop codespace** |
-| Resume a stopped Codespace | [github.com/codespaces](https://github.com/codespaces) → click the Codespace name |
-
 :::info Codespace limits on the Free plan
 The GitHub Free plan includes **120 core-hours** and **15 GB-months** of storage per month. A 2-core Codespace (the default) gives you ~60 hours of active use per month — more than enough for today's event.
 :::
@@ -75,11 +63,10 @@ The GitHub Free plan includes **120 core-hours** and **15 GB-months** of storage
 
 Once your Codespace is running, confirm everything is working:
 
-1. Open the integrated terminal (`Ctrl+`` ` ``).
-2. Look for the GitHub Copilot icon (the Copilot logo) in the VS Code status bar at the bottom. It should be visible and **not** show a warning.
-3. Open any source file and start typing — you should see grey inline suggestions from Copilot appear.
+1. Look for the GitHub Copilot icon (the Copilot logo) in the VS Code status bar at the bottom. It should be visible and **not** show a warning.
+2. Open any source file and start typing a question in Copilot Chat — you should see responses from Copilot appear.
 
-If Copilot suggestions don't appear, try:
+If Copilot chat don't appear, try:
 - Running **GitHub Copilot: Sign In** from the Command Palette (`F1`)
 - Ensuring your Copilot subscription is active at [github.com/settings/copilot](https://github.com/settings/copilot)
 

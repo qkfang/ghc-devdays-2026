@@ -53,7 +53,7 @@ function HomepageHeader() {
         <Sidebar />
         <div className={styles.heroContent}>
           <Heading as="h1" className={styles.heroTitle}>
-            GitHub Copilot<br />Dev Days
+            GitHub Copilot<br />Dev Days (Sydney)
           </Heading>
 
           <div className={styles.buttons}>

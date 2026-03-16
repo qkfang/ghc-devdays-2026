@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'GitHub Copilot Dev Days 2026',
+  title: 'GitHub Copilot Dev Days 2026 (Sydney)',
   tagline: 'Hands-on labs for GitHub Copilot',
   favicon: 'img/favicon.ico',
 
