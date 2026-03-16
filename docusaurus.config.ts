@@ -90,17 +90,8 @@ const config: Config = {
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/qkfang/ghc-dev-day-2026',
-            },
-          ],
-        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} GitHub Copilot Dev Days. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} GitHub Copilot Dev Days - Sydney`,
     },
     prism: {
       theme: prismThemes.github,

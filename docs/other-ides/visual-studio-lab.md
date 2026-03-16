@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: .NET 10 + Blazor + Visual Studio 2026
+title: .NET 10 + Blazor + Visual Studio
 ---
 
 # .NET 10 + Blazor + Visual Studio 2026

@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
@@ -41,7 +41,6 @@ function Sidebar() {
           </svg>
         </div>
       </div>
-      <div className={styles.verticalDivider}></div>
     </div>
   );
 }
@@ -56,15 +55,7 @@ function HomepageHeader() {
           <Heading as="h1" className={styles.heroTitle}>
             GitHub Copilot<br />Dev Days
           </Heading>
-          <div className={styles.wifiSection}>
-            <p className={styles.wifiText}>
-              WiFi: <span className={styles.highlighted}>MSFTEvent</span>
-            </p>
-            <p className={styles.wifiText}>Choose Event Code option</p>
-            <p className={styles.wifiText}>
-              Code: <span className={styles.highlighted}>xxxxxx</span>
-            </p>
-          </div>
+
           <div className={styles.buttons}>
             <Link
               className={styles.browseButton}
@@ -73,10 +64,6 @@ function HomepageHeader() {
             </Link>
           </div>
         </div>
-      </div>
-      <div className={styles.heroBottom}>
-        <div className={styles.panel}></div>
-        <div className={styles.panel}></div>
       </div>
     </div>
   );
@@ -90,7 +77,6 @@ export default function Home(): ReactNode {
       description="Hands-on labs for GitHub Copilot Dev Days 2026">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
       </main>
     </Layout>
   );

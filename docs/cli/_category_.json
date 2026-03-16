@@ -1,6 +1,6 @@
 {
-  "label": "⌨️ GitHub Copilot CLI",
-  "position": 5,
+  "label": "⌨️ Copilot CLI",
+  "position": 20,
   "collapsible": true,
-  "collapsed": false
+  "collapsed": true
 }

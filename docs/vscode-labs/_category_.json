@@ -1,6 +1,6 @@
 {
-  "label": "💻 GitHub Copilot for VS Code",
-  "position": 3,
+  "label": "💻 Copilot for VS Code",
+  "position": 20,
   "collapsible": true,
-  "collapsed": false
+  "collapsed": true
 }
