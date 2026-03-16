@@ -1,65 +1,84 @@
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
-type FeatureItem = {
+type WaveItem = {
+  label: string;
   title: string;
-  emoji: string;
-  description: ReactNode;
+  period: string;
+  gradient: string;
+  isActive: boolean;
 };
 
-const FeatureList: FeatureItem[] = [
+const waves: WaveItem[] = [
   {
-    title: 'VS Code Labs',
-    emoji: '🖥️',
-    description: (
-      <>
-        Five hands-on labs covering TypeScript, Python, Java, and .NET using VS Code Copilot Agent Mode.
-      </>
-    ),
+    label: 'Wave 1',
+    title: 'Pair programmer',
+    period: 'Code completion\n(2021-2023)',
+    gradient: 'linear-gradient(135deg, #c09fff 0%, #ff90c0 60%, #90c8ff 100%)',
+    isActive: false,
   },
   {
-    title: 'Other IDEs',
-    emoji: '🛠️',
-    description: (
-      <>
-        Workshops for Visual Studio, Xcode, and JetBrains with GitHub Copilot integration.
-      </>
-    ),
+    label: 'Wave 2',
+    title: 'Beyond pair programmers',
+    period: 'Agentic SDLC\n(2024-Present)',
+    gradient: 'linear-gradient(135deg, #90ffa0 0%, #3ec860 100%)',
+    isActive: true,
   },
   {
-    title: 'CLI & Agents',
-    emoji: '⌨️',
-    description: (
-      <>
-        CLI lab with Tailspin Toys and the Mona Mayhem coding agents lab.
-      </>
-    ),
+    label: 'Wave 3',
+    title: 'Teams + agents',
+    period: 'Hybrid teams\n(2026+)',
+    gradient: 'linear-gradient(135deg, #90c8ff 0%, #c0f4ff 100%)',
+    isActive: false,
   },
 ];
 
-function Feature({title, emoji, description}: FeatureItem) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <div className={styles.featureEmoji} role="img" aria-label={title}>{emoji}</div>
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+    <section className={styles.wavesSection}>
+      <div className={styles.container}>
+        <h2 className={styles.wavesTitle}>Riding the waves</h2>
+
+        {/* Timeline */}
+        <div className={styles.timelineWrapper}>
+          <div className={styles.timelineTrack}>
+            <div className={styles.waveNode}>
+              <div className={styles.wavePill}>Wave 1</div>
+            </div>
+
+            <div className={styles.timelineLine}>
+              <div className={styles.timelineDot}></div>
+            </div>
+
+            <div className={styles.waveNodeCenter}>
+              <div className={styles.todayLabel}>Today</div>
+              <div className={styles.wavePillActive}>
+                <span className={styles.waveStar}>✦</span> Wave 2
+              </div>
+            </div>
+
+            <div className={styles.timelineLine}>
+              <div className={styles.timelineDot}></div>
+            </div>
+
+            <div className={styles.waveNode}>
+              <div className={styles.wavePill}>Wave 3</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Cards */}
+        <div className={styles.cardsRow}>
+          {waves.map((wave, idx) => (
+            <div key={idx} className={styles.cardWrapper}>
+              <div
+                className={`${styles.card} ${wave.isActive ? styles.cardActive : ''}`}
+                style={{background: wave.gradient}}
+              >
+                <div className={styles.cardLabel}>{wave.title}</div>
+              </div>
+              <p className={styles.cardPeriod}>{wave.period}</p>
+            </div>
           ))}
         </div>
       </div>
